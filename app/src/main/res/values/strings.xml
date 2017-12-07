@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhotosAndroid57</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Create Album</string>
+</resources>

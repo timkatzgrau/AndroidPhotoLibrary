@@ -1,0 +1,173 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4114112622a8b3c7f1f33d60e07d4eb2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:5:5-21:19
+MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4114112622a8b3c7f1f33d60e07d4eb2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4114112622a8b3c7f1f33d60e07d4eb2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.katzgrau.photosandroid57.MainActivity
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4114112622a8b3c7f1f33d60e07d4eb2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4114112622a8b3c7f1f33d60e07d4eb2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f35886e54b3173f614c71dc903c699d5/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/df294a4579b5dbf0c26163df2b9318b0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b701a117c4d1521c29ed4bec99a50ecd/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/12c7bec8f9049e603b4162fd4ae41a79/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/3104b138d816f510e982b5737e1c484b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/96dd4107b42a4d0ac5adb7807f0edf19/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3ec323b7e1cb82de195c5fbfa32f42d2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/279c0f3433b9ddf2fb29cfd7937e6270/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:26:13-58
