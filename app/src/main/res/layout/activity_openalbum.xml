@@ -9,7 +9,7 @@
     tools:context="com.example.katzgrau.photosandroid57.openalbum">
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/navigationopenalbum"
         android:layout_width="0dp"
         android:layout_height="51dp"
         android:background="?android:attr/windowBackground"

@@ -26,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.katzgrau.photosandroid57.openalbum" />
 
         <meta-data
             android:name="android.support.VERSION"

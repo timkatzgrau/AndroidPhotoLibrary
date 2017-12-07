@@ -1,8 +1,10 @@
 package com.example.katzgrau.photosandroid57;
 
+import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -25,17 +27,19 @@ public class openalbum extends AppCompatActivity {
     private Context ctx = this;
     private String m_Text = "";
     private ListView listView;
+    public static final int PICK_IMAGE = 1;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_rename:
                     return true;
-                case R.id.navigation_dashboard:
-                    Builder builder = new Builder(ctx);
+                case R.id.navigation_delete:
+                    AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
                     builder.setTitle("Title");
 
                     // Set up the input
@@ -63,6 +67,13 @@ public class openalbum extends AppCompatActivity {
 
                     builder.show();
                     return true;
+                case R.id.navigation_addImage:
+                    Intent intent = new Intent();
+                    intent.setType("image/*");
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
+
+                    return true;
             }
             return false;
         }
@@ -71,6 +82,7 @@ public class openalbum extends AppCompatActivity {
 
     public void reload() {
         listView.setAdapter(null);
+
         ArrayList<String> values = new ArrayList<String>();
         for(int i = 0; i < Instagram.getApp().getAllAlbums().size(); i++) {
             values.add(Instagram.getApp().getAllAlbums().get(i).name);
@@ -84,11 +96,14 @@ public class openalbum extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        listView = (ListView) findViewById(R.id.list);
+        Intent intent = getIntent();
+        String title = intent.getStringExtra(MainActivity.EXTRA_TITLE);
+        setTitle(title);
+        setContentView(R.layout.activity_openalbum);
+        listView = (ListView) findViewById(R.id.listopenalbum);
         reload();
 
         // ListView Item Click Listener
@@ -112,8 +127,7 @@ public class openalbum extends AppCompatActivity {
         });
 
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationopenalbum);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }

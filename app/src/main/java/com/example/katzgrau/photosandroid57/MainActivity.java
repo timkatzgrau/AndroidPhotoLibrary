@@ -3,6 +3,7 @@ package com.example.katzgrau.photosandroid57;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Context ctx = this;
     private String m_Text = "";
     private ListView listView;
-
+    public static final String EXTRA_TITLE = "com.example.katzgrau.photosandroid57.TITLE";
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -95,16 +96,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+
                 // ListView Clicked item index
                 int itemPosition = position;
 
                 // ListView Clicked item value
                 String itemValue = (String) listView.getItemAtPosition(position);
-                setTitle(itemValue);
-                setContentView(R.layout.activity_openalbum);
+                Intent intent = new Intent(MainActivity.this, openalbum.class);
+                intent.putExtra(EXTRA_TITLE, itemValue );
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+
 
             }
         });
+
 
 
         mTextMessage = (TextView) findViewById(R.id.message);
