@@ -35,6 +35,10 @@ INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:4:22-77
 application
 ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:5:5-22:19
 MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:25:5-29:19

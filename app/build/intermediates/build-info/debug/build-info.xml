@@ -1,80 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="23"
-    build-mode="FULL"
+    api-level="26"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1512638743135"
+    timestamp="1512691697698"
     token="-7544902925908448488"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="4601" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="292" />
+        duration="86" />
     <task
         name="verifier"
-        duration="0" />
+        duration="20" />
 
     <artifact
         location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/outputs/apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1512638743135"
+        timestamp="1512679874401"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -83,14 +54,26 @@
             location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1512689730257"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
@@ -98,7 +81,31 @@
             location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1512691697698"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
     </build>
 

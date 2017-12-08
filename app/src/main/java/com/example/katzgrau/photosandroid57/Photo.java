@@ -1,5 +1,7 @@
 package com.example.katzgrau.photosandroid57;
 
+import android.net.Uri;
+
 import java.io.File;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -18,7 +20,7 @@ public class Photo implements Serializable {
 	/**
 	 * file path for photo
 	 **/
-	private String photoFileURI;
+	private Uri photoFileURI;
 	
 	/**
 	 * user photo is created by
@@ -49,11 +51,9 @@ public class Photo implements Serializable {
 	 * @param file
 	 * file to be made into photo
 	 **/
-	public Photo(File file) {
-		photoFileURI = file.toURI().toString();
-		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-		date = file.lastModified();
-		stringDate = sdf.format(date);
+
+	public Photo(Uri uri) {
+		photoFileURI = uri;
 		tags = new ArrayList<Tag>();
 	}
 	
@@ -67,7 +67,7 @@ public class Photo implements Serializable {
 	/**
 	 * @return get file path of photo
 	 **/
-	public String getPhotoFileURI() {
+	public Uri getPhotoFileURI() {
 		return photoFileURI;
 	}
 	

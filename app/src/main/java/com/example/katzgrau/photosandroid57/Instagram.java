@@ -1,5 +1,7 @@
 package com.example.katzgrau.photosandroid57;
 
+import android.net.Uri;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -195,7 +197,15 @@ public class Instagram implements Serializable {
 		toAlbum.getPhotos().add(photo);
 		
 	}
-	
+
+	public Album getAlbumByTitle(String title){
+		for(int i = 0; i < albums.size(); i++){
+			if(albums.get(i).name.equals(title)){
+				return albums.get(i);
+			}
+		}
+		return null;
+	}
 	/**
 	 * @param photo
 	 * photo to be copied
@@ -212,13 +222,14 @@ public class Instagram implements Serializable {
 	 * @param album
 	 * album the photo is created in
 	 **/
-	public void addPhoto(File file, Album album) {
-		Photo photo = new Photo(file);
-		
+
+
+	public void addPhoto(Uri uri, Album album) {
+		Photo photo = new Photo(uri);
+
 		photos.add(photo);
 		album.getPhotos().add(photo);
 	}
-	
 	/**
 	 * @return list of users using photo album app
 	 **/
