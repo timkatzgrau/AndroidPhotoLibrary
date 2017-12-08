@@ -29,6 +29,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.katzgrau.photosandroid57.openalbum" />
+        <activity android:name="com.example.katzgrau.photosandroid57.openphoto" />
+        <activity android:name="com.example.katzgrau.photosandroid57.slideshow" />
 
         <meta-data
             android:name="android.support.VERSION"

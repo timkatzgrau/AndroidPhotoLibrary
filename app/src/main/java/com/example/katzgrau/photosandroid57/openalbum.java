@@ -57,7 +57,7 @@ public class openalbum extends AppCompatActivity {
     FloatingActionButton btnSelectImage;
     ImageView imgView;
     public static final String EXTRA_TITLE = "com.example.katzgrau.photosandroid57.TITLE";
-
+    public static final String EXTRA_POSITION = "com.example.katzgrau.photosandroid57.POSITION";;
 
 
     ListView list;
@@ -161,6 +161,7 @@ public class openalbum extends AppCompatActivity {
         web.clear();
         uris.clear();
         ArrayList<String> values = new ArrayList<String>();
+
         for(int i = 0; i < album.getPhotos().size(); i++) {
 
 
@@ -186,7 +187,7 @@ public class openalbum extends AppCompatActivity {
         setTitle(title);
         setContentView(R.layout.activity_openalbum);
         album = Instagram.getApp().getAlbumByTitle(title);
-        //listView = (ListView) findViewById(R.id.listopenalbum);
+        listView = (ListView) findViewById(R.id.listopenalbum);
         learn2crack.customlistview.CustomList adapter = new
                 learn2crack.customlistview.CustomList(openalbum.this, web, uris);
         list=(ListView)findViewById(R.id.listopenalbum);
@@ -195,33 +196,21 @@ public class openalbum extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String itemValue = album.name;
+                System.out.println("HIIIIIIIII" + position);
+                int pos = position;
+                Intent intent = new Intent(openalbum.this, openphoto.class);
+                intent.putExtra(EXTRA_TITLE, itemValue );
+                intent.putExtra(EXTRA_POSITION, position );
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
 
             }
         });
         reload();
 
 
-        // ListView Item Click Listener
-        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                // ListView Clicked item index
-                int itemPosition = position;
-
-                // ListView Clicked item value
-                //String itemValue = (String) listView.getItemAtPosition(position);
-
-                // Show Alert
-                Toast.makeText(getApplicationContext(),
-                        "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
-                        .show();
-
-            }
-        });*/
 
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationopenalbum);
