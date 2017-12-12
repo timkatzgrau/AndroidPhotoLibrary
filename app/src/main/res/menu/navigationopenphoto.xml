@@ -9,6 +9,12 @@
         android:title="Back" />
 
     <item
+        android:id="@+id/navigation_movePhoto"
+        android:icon="?android:attr/actionModeCopyDrawable"
+        android:iconTint="@android:color/black"
+        android:title="Move" />
+
+    <item
         android:id="@+id/navigation_slideshow"
         android:icon="@android:drawable/ic_menu_slideshow"
         android:iconTint="@android:color/black"

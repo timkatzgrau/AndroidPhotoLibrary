@@ -1,4 +1,4 @@
-#Fri Dec 08 00:21:09 EST 2017
+#Tue Dec 12 00:16:41 EST 2017
 base.0=/Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/build/intermediates/transforms/dexMerger/debug/1
 path.0=classes.dex
 renamed.0=classes.dex

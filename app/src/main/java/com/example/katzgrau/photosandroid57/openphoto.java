@@ -1,5 +1,6 @@
 package com.example.katzgrau.photosandroid57;
 
+import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -18,10 +19,14 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -67,6 +72,39 @@ public class openphoto extends AppCompatActivity {
                     intentyy.putExtra(EXTRA_TITLE, album.name );
                     intentyy.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intentyy);
+                    return true;
+                case R.id.navigation_movePhoto:
+                    Builder builder = new AlertDialog.Builder(ctx);
+                    builder.setTitle("Single Choice");
+                    ArrayList<String> albumNames = new ArrayList<String>();
+                    for(int i = 0; i < Instagram.getApp().getAllAlbums().size(); i++){
+                        albumNames.add(Instagram.getApp().getAllAlbums().get(i).name);
+                    }
+                    String[] names = new String[albumNames.size()];
+                    albumNames.toArray(names);
+                    builder.setItems(names, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Album selectedAlbum = Instagram.getApp().getAlbumByTitle(names[which]);
+                            selectedAlbum.addPhoto(album.getPhotos().get(pos));
+                            album.getPhotos().remove(pos);
+                            Toast.makeText(ctx,"Photo has been moved to" + names[which],Toast.LENGTH_SHORT).show();
+                            dialog.dismiss();
+                            Intent intenty = new Intent(openphoto.this, openalbum.class);
+                            intenty.putExtra(EXTRA_TITLE, album.name );
+                            intenty.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                            startActivity(intenty);
+                        }
+                    });
+                    builder.setNegativeButton("cancel",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    AlertDialog alert = builder.create();
+                    alert.show();
                     return true;
                 case R.id.navigation_deletePhoto:
                     album.getPhotos().remove(pos);
