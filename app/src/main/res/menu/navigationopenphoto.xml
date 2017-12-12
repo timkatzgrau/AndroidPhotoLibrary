@@ -15,6 +15,13 @@
         android:title="Move" />
 
     <item
+        android:id="@+id/navigation_addTag"
+        android:icon="@android:drawable/ic_input_add"
+        android:iconTint="@android:color/black"
+        android:title="Add Tag" />
+
+
+    <item
         android:id="@+id/navigation_slideshow"
         android:icon="@android:drawable/ic_menu_slideshow"
         android:iconTint="@android:color/black"

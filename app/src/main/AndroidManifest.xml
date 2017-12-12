@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.katzgrau.photosandroid57.openalbum"/>
-        <activity android:name="com.example.katzgrau.photosandroid57.openphoto"/>
+        <activity android:name="com.example.katzgrau.photosandroid57.openphoto" android:windowSoftInputMode="adjustPan"/>
         <activity android:name="com.example.katzgrau.photosandroid57.slideshow"/>
     </application>
 

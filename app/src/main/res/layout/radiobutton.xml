@@ -1,0 +1,89 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true" >
+
+        <RadioGroup
+            android:id="@+id/lactate_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:checkedButton="@+id/lactate_calibrated_value">>
+
+            <RadioButton
+                android:id="@+id/lactate_calibrated_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person" />
+
+            <RadioButton
+                android:id="@+id/lactate_default_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/newTagText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lactate_radio"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="34dp"
+            android:layout_toEndOf="@+id/lactate_radio" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lactate_custom_value_edit_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/lactate_radio"
+            android:text="Add Tag" />
+
+        <RadioGroup
+            android:id="@+id/lactate_radiodisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp">
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/deletebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:text="Delete Tag" />
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="15dp"
+            android:text="Back" />
+
+
+    </RelativeLayout>
+</ScrollView>

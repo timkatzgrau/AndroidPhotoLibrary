@@ -102,7 +102,9 @@ ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/An
 	android:name
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:21:19-80
 activity#com.example.katzgrau.photosandroid57.openphoto
-ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:22:9-82
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:22:9-122
+	android:windowSoftInputMode
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:22:81-120
 	android:name
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:22:19-80
 activity#com.example.katzgrau.photosandroid57.slideshow

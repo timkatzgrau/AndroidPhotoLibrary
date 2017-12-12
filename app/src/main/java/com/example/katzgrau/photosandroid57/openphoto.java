@@ -2,6 +2,7 @@ package com.example.katzgrau.photosandroid57;
 
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,17 +19,24 @@ import android.text.InputType;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class openphoto extends AppCompatActivity {
 
@@ -41,12 +49,13 @@ public class openphoto extends AppCompatActivity {
     private static final String TAG = "openphoto";
     private Album album;
     private int pos;
+    String tagStr;
     CoordinatorLayout coordinatorLayout;
     FloatingActionButton btnSelectImage;
     ImageView imgView;
     public static final String EXTRA_TITLE = "com.example.katzgrau.photosandroid57.TITLE";
     public static final String EXTRA_POSITION = "com.example.katzgrau.photosandroid57.POSITION";;
-
+    TextView t;
     ListView list;
     ArrayList<String> web = new ArrayList<String>();
     ArrayList<Uri> uris = new ArrayList<Uri>();
@@ -73,6 +82,100 @@ public class openphoto extends AppCompatActivity {
                     intentyy.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intentyy);
                     return true;
+                case R.id.navigation_addTag:
+                    // custom dialog
+                    final Dialog dialog = new Dialog(ctx);
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    dialog.setContentView(R.layout.radiobutton);
+                    List<String> stringList=new ArrayList<>();
+                    RadioGroup rg = (RadioGroup) dialog.findViewById(R.id.lactate_radiodisplay);
+                    for(int i = 0; i < album.getPhotos().get(pos).getTags().size(); i++){
+                        stringList.add(album.getPhotos().get(pos).getTags().get(i).toString());
+                        RadioButton rb = new RadioButton(ctx); // dynamically creating RadioButton and adding to RadioGroup.
+                        rb.setText(album.getPhotos().get(pos).getTags().get(i).toString());
+                        rg.addView(rb);
+                    }
+
+
+
+                    Button btn = (Button) (Button)dialog.findViewById(R.id.button);
+
+                    btn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            RadioGroup radioGroup = (RadioGroup) dialog.findViewById(R.id.lactate_radio);
+                            int radioButtonID = radioGroup.getCheckedRadioButtonId();
+                            RadioButton radioButton = (RadioButton) radioGroup.findViewById(radioButtonID);
+                            String key = (String) radioButton.getText();
+
+                            EditText edit = (EditText)dialog.findViewById(R.id.newTagText);
+                            String value = edit.getText().toString();
+
+                            if(!value.equals("")) {
+                                Tag tag = new Tag(key,value);
+                                album.getPhotos().get(pos).addTag(tag);
+                                stringList.add(tag.toString());
+
+
+                                RadioButton rb = new RadioButton(ctx); // dynamically creating RadioButton and adding to RadioGroup.
+                                rb.setText(tag.toString());
+                                rg.addView(rb);
+                                View view = dialog.getCurrentFocus();
+                                if (view != null) {
+                                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                                }
+                                tagStr = "" ;
+                                for(int i = 0; i < album.getPhotos().get(pos).getTags().size(); i++){
+                                    tagStr = tagStr + " , " + album.getPhotos().get(pos).getTags().get(i);
+                                }
+                                t.setText(tagStr);
+                            }
+                        }
+                    });
+
+                    Button cancelbtn = (Button) (Button)dialog.findViewById(R.id.backbutton);
+
+                    cancelbtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    Button deletebutton = (Button) (Button)dialog.findViewById(R.id.deletebutton);
+
+                    deletebutton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            RadioGroup radioGroup = (RadioGroup) dialog.findViewById(R.id.lactate_radiodisplay);
+                            if(radioGroup != null) {
+                                int radioButtonID = radioGroup.getCheckedRadioButtonId();
+                                RadioButton radioButton = (RadioButton) radioGroup.findViewById(radioButtonID);
+
+                                if(radioButton != null) {
+                                    String str = (String) radioButton.getText();
+
+                                    album.getPhotos().get(pos).getTags().remove(album.getPhotos().get(pos).getTagByName(str));
+                                    stringList.clear();
+                                    radioGroup.removeView(radioButton);
+                                    tagStr = "" ;
+                                    for(int i = 0; i < album.getPhotos().get(pos).getTags().size(); i++){
+                                        tagStr = tagStr + " , " + album.getPhotos().get(pos).getTags().get(i);
+                                    }
+                                    t.setText(tagStr);
+                                }
+                            }
+                        }
+                    });
+
+
+
+
+
+                    dialog.show();
+                    return true;
+
                 case R.id.navigation_movePhoto:
                     Builder builder = new AlertDialog.Builder(ctx);
                     builder.setTitle("Single Choice");
@@ -162,7 +265,12 @@ public class openphoto extends AppCompatActivity {
         album = Instagram.getApp().getAlbumByTitle(title);
         imgView.setImageURI(album.getPhotos().get(position).getPhotoFileURI());
 
-
+        t = (TextView) findViewById(R.id.textViewOpenPhoto);
+         tagStr = "" ;
+        for(int i = 0; i < album.getPhotos().get(pos).getTags().size(); i++){
+            tagStr = tagStr + " , " + album.getPhotos().get(pos).getTags().get(i);
+        }
+        t.setText(tagStr);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationopenphoto);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

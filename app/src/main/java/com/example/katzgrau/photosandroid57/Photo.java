@@ -116,5 +116,13 @@ public class Photo implements Serializable {
 		Image image = new Image(photoFileURI);
 		return image;
 	}*/
+	public Tag getTagByName(String str) {
 
+		for(int i = 0; i < tags.size(); i ++){
+			if(str.equals(tags.get(i).toString())){
+				return tags.get(i);
+			}
+		}
+		return null;
+	}
 }
