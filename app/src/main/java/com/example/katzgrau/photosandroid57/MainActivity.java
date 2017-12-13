@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     return true;
+                case R.id.navigation_search:
+                    Intent intent = new Intent(MainActivity.this, search.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(intent);
+                    return true;
                 case R.id.navigation_dashboard:
                     AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
                     builder.setTitle("Title");
