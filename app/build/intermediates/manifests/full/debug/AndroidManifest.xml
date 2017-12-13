@@ -33,6 +33,8 @@
             android:name="com.example.katzgrau.photosandroid57.openphoto"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name="com.example.katzgrau.photosandroid57.slideshow" />
+        <activity android:name="com.example.katzgrau.photosandroid57.search" />
+        <activity android:name="com.example.katzgrau.photosandroid57.searchresults" />
 
         <meta-data
             android:name="android.support.VERSION"

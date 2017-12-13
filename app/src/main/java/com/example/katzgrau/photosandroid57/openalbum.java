@@ -176,7 +176,6 @@ public class openalbum extends AppCompatActivity {
         // Assign adapter to ListView
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-
     }
 
     @Override
