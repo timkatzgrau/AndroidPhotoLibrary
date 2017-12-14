@@ -141,15 +141,6 @@ public class openalbum extends AppCompatActivity {
                     return true;
                 case R.id.navigation_addImage:
                     Intent intent = new Intent();
-                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-                        intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-                        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-                        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
-                    }else{
-                        intent = new Intent(Intent.ACTION_GET_CONTENT);
-                    }
-                    intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
-                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                     intent.setType("image/*");
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     startActivityForResult(Intent.createChooser(intent, "Select Picture"), SELECT_PICTURE);
@@ -165,10 +156,6 @@ public class openalbum extends AppCompatActivity {
             if (requestCode == SELECT_PICTURE) {
                 // Get the url from data
                 Uri selectedImageUri = data.getData();
-                int takeFlags = data.getFlags();
-                takeFlags &= Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION;
-//                ContentResolver resolver = getContentResolver();
-//                resolver.takePersistableUriPermission(selectedImageUri, takeFlags);
 
                 if (null != selectedImageUri) {
                     // Get the path from the Uri

@@ -71,14 +71,6 @@ public class MainActivity extends AppCompatActivity {
                                 reload();
                             } else {
                                 Instagram.getApp().createAlbum(m_Text);
-                                try {
-                                    FileOutputStream fos = openFileOutput(Instagram.storeFile, Context.MODE_PRIVATE);
-                                    ObjectOutputStream oos = new ObjectOutputStream(fos);
-                                    oos.writeObject(Instagram.getApp());
-                                    fos.close();
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                }
                                 reload();
                             }
                         }
@@ -116,15 +108,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (Instagram.instagram == null) {
-            try {
-                Instagram.create(this);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.list);
         reload();

@@ -60,12 +60,7 @@ public class Instagram implements Serializable {
 	 **/
 	public User currentUser;
 	
-	/**
-	 * sets the instance of the class by deserializing
-	 **/
-	public static void create(Context context) throws ClassNotFoundException, IOException {
-		instagram = readApp(context);
-	}
+
 	
 	/**
 	 * @return the instance of the class
@@ -87,36 +82,6 @@ public class Instagram implements Serializable {
 		photos = new ArrayList<Photo>();
 		albums = new ArrayList<Album>();
 	}
-	
-	/**
-	 * @param iapp
-	 * the instance that will be serialized for data persistance
-	 **/
-	public static void writeApp(Context context, Instagram iapp) throws IOException {
-		FileOutputStream fos = context.openFileOutput(storeFile, Context.MODE_PRIVATE);
-		ObjectOutputStream oos = new ObjectOutputStream(fos);
-		oos.writeObject(iapp);
-		oos.close();
-		fos.close();
-	}
-	
-	/**
-	 * @return deserialized instance of the class
-	 **/
-	public static Instagram readApp(Context context)
-			throws IOException, ClassNotFoundException {
-		try {
-			FileInputStream fis = context.openFileInput(storeFile);
-			System.out.println("FAILS AT INSTAGRAM CAST");
-			ObjectInputStream ois = new ObjectInputStream(fis);
-			Instagram iapp = (Instagram)ois.readObject();
-			System.out.println("IS READING");
-			return iapp;
-		} catch (Exception e) {
-			System.out.println("CAN NOT READ");
-			return null;
-		}
-	} 
 	
 	/**
 	 * @param user
@@ -252,19 +217,19 @@ public class Instagram implements Serializable {
 		ArrayList<Photo> haveTags = new ArrayList<Photo>();
 		ArrayList<Boolean> foundTags = new ArrayList<Boolean>();
 		
-		for (int i = 0; i < currentUser.getAlbums().size(); i++) {
-			for (int j = 0; j < currentUser.getAlbums().get(i).getPhotos().size(); j++) {
+		for (int i = 0; i < albums.size(); i++) {
+			for (int j = 0; j < albums.get(i).getPhotos().size(); j++) {
 				foundTags.clear();
 				for (int z = 0; z < searchParams.length; z++) {
-					for (int y = 0; y < currentUser.getAlbums().get(i).getPhotos().get(j).getTags().size(); y++) {
-						if (currentUser.getAlbums().get(i).getPhotos().get(j).getTags().get(y).key.equals(searchParams[z].key) && currentUser.getAlbums().get(i).getPhotos().get(j).getTags().get(y).value.equals(searchParams[z].value)){
+					for (int y = 0; y < albums.get(i).getPhotos().get(j).getTags().size(); y++) {
+						if ((albums.get(i).getPhotos().get(j).getTags().get(y).key.equals(searchParams[z].key) && albums.get(i).getPhotos().get(j).getTags().get(y).value.equals(searchParams[z].value))  || (albums.get(i).getPhotos().get(j).getTags().get(y).key.equals(searchParams[z].key) && albums.get(i).getPhotos().get(j).getTags().get(y).value.toLowerCase().contains(searchParams[z].value.toLowerCase()))){
 							foundTags.add(true);
 						}
 					}
 				}
 				
-				if(foundTags.size() == searchParams.length && !haveTags.contains(currentUser.getAlbums().get(i).getPhotos().get(j))) {
-					haveTags.add(currentUser.getAlbums().get(i).getPhotos().get(j));
+				if(foundTags.size() == searchParams.length && !haveTags.contains(albums.get(i).getPhotos().get(j))) {
+					haveTags.add(albums.get(i).getPhotos().get(j));
 				}
 			}
 		}

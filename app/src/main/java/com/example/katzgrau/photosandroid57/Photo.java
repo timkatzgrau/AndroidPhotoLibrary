@@ -20,7 +20,7 @@ public class Photo implements Serializable {
 	/**
 	 * file path for photo
 	 **/
-	private String photoFileURI;
+	private Uri photoFileURI;
 	
 	/**
 	 * user photo is created by
@@ -53,7 +53,7 @@ public class Photo implements Serializable {
 	 **/
 
 	public Photo(Uri uri) {
-		photoFileURI = uri.toString();
+		photoFileURI = uri;
 		tags = new ArrayList<Tag>();
 	}
 	
@@ -68,7 +68,7 @@ public class Photo implements Serializable {
 	 * @return get file path of photo
 	 **/
 	public Uri getPhotoFileURI() {
-		return android.net.Uri.parse(photoFileURI);
+		return photoFileURI;
 	}
 	
 	/**
