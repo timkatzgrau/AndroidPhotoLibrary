@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4114112622a8b3c7f1f33d60e07d4eb2/AndroidManifest.xml:2:1-11:12
@@ -18,20 +18,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/Katzgrau/.gra
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/5e83078590c44fed83a3d5bf8013747f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/cba37840f775132be20ab4e27da243c8/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d5c2d7bc29cc337d272a5f8babfea0d4/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:2:11-69
@@ -40,7 +40,7 @@ ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/An
 	android:name
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:4:22-77
 application
-ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:5:5-26:19
+ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/aa2669ecc19ce2716a09a5cac70209e7/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/Katzgrau/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/1dae134cc729f3826c56a5a3d5460e76/AndroidManifest.xml:25:5-29:19
@@ -111,14 +111,6 @@ activity#com.example.katzgrau.photosandroid57.slideshow
 ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:23:9-82
 	android:name
 		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:23:19-80
-activity#com.example.katzgrau.photosandroid57.search
-ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:24:9-79
-	android:name
-		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:24:19-77
-activity#com.example.katzgrau.photosandroid57.searchresults
-ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:25:9-86
-	android:name
-		ADDED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml:25:19-84
 uses-sdk
 INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Katzgrau/AndroidStudioProjects/PhotosAndroid57/app/src/main/AndroidManifest.xml
