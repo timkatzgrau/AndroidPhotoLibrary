@@ -3,6 +3,7 @@ package com.example.katzgrau.photosandroid57;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
@@ -87,12 +89,35 @@ public class openalbum extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             m_Text = input.getText().toString();
-                            album.setName(m_Text);
-                            Intent intent = new Intent(openalbum.this, openalbum.class);
-                            intent.putExtra(EXTRA_TITLE, m_Text );
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                            startActivity(intent);
-                            reload();
+
+                            Album found = null;
+                            String mTextLower = input.getText().toString().toLowerCase();
+
+                            for(int i = 0; i < Instagram.getApp().getAllAlbums().size(); i++){
+                                if(Instagram.getApp().getAllAlbums().get(i).name.toLowerCase().equals(mTextLower)){
+                                    found = Instagram.getApp().getAllAlbums().get(i);
+                                }
+                            }
+
+                            if (found != null) {
+                                AlertDialog alertDialog = new AlertDialog.Builder(openalbum.this).create();
+                                alertDialog.setTitle("Alert");
+                                alertDialog.setMessage("album name already exists");
+                                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                                        new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.dismiss();
+                                            }
+                                        });
+                                alertDialog.show();
+                            } else {
+                                album.setName(m_Text);
+                                Intent intent = new Intent(openalbum.this, openalbum.class);
+                                intent.putExtra(EXTRA_TITLE, m_Text);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                                startActivity(intent);
+                                reload();
+                            }
                         }
 
                     });
@@ -116,6 +141,15 @@ public class openalbum extends AppCompatActivity {
                     return true;
                 case R.id.navigation_addImage:
                     Intent intent = new Intent();
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+                        intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+                    }else{
+                        intent = new Intent(Intent.ACTION_GET_CONTENT);
+                    }
+                    intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
+                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                     intent.setType("image/*");
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     startActivityForResult(Intent.createChooser(intent, "Select Picture"), SELECT_PICTURE);
@@ -131,6 +165,11 @@ public class openalbum extends AppCompatActivity {
             if (requestCode == SELECT_PICTURE) {
                 // Get the url from data
                 Uri selectedImageUri = data.getData();
+                int takeFlags = data.getFlags();
+                takeFlags &= Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION;
+//                ContentResolver resolver = getContentResolver();
+//                resolver.takePersistableUriPermission(selectedImageUri, takeFlags);
+
                 if (null != selectedImageUri) {
                     // Get the path from the Uri
                     String path = getPathFromURI(selectedImageUri);
@@ -164,9 +203,14 @@ public class openalbum extends AppCompatActivity {
 
         for(int i = 0; i < album.getPhotos().size(); i++) {
 
+            String tagString = "";
+
+            for (int j = 0; j < album.getPhotos().get(i).getTags().size(); j++) {
+                tagString += album.getPhotos().get(i).getTags().get(j).toString() + " ";
+            }
 
             if(album.getPhotos().size() > 0) {
-                web.add("Testing");
+                web.add(tagString);
                 uris.add(album.getPhotos().get(i).getPhotoFileURI());
             }
         }
@@ -182,6 +226,7 @@ public class openalbum extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
+
         String title = intent.getStringExtra(MainActivity.EXTRA_TITLE);
         setTitle(title);
         setContentView(R.layout.activity_openalbum);

@@ -17,6 +17,9 @@ import android.widget.TextView;
 import android.view.View;
 import android.widget.EditText;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,8 +57,30 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             m_Text = input.getText().toString();
-                            Instagram.getApp().createAlbum(m_Text);
-                            reload();
+
+                            Album found = null;
+                            String mTextLower = input.getText().toString().toLowerCase();
+
+                            for(int i = 0; i < Instagram.getApp().getAllAlbums().size(); i++){
+                                if(Instagram.getApp().getAllAlbums().get(i).name.toLowerCase().equals(mTextLower)){
+                                    found = Instagram.getApp().getAllAlbums().get(i);
+                                }
+                            }
+
+                            if (found != null) {
+                                reload();
+                            } else {
+                                Instagram.getApp().createAlbum(m_Text);
+                                try {
+                                    FileOutputStream fos = openFileOutput(Instagram.storeFile, Context.MODE_PRIVATE);
+                                    ObjectOutputStream oos = new ObjectOutputStream(fos);
+                                    oos.writeObject(Instagram.getApp());
+                                    fos.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                reload();
+                            }
                         }
 
                     });
@@ -91,6 +116,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Instagram.instagram == null) {
+            try {
+                Instagram.create(this);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.list);
         reload();

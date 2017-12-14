@@ -111,7 +111,17 @@ public class openphoto extends AppCompatActivity {
                             EditText edit = (EditText)dialog.findViewById(R.id.newTagText);
                             String value = edit.getText().toString();
 
-                            if(!value.equals("")) {
+                            boolean tagExists = false;
+                            for (int j = 0; j < album.getPhotos().get(pos).getTags().size(); j++) {
+                                Tag temp = album.getPhotos().get(pos).getTags().get(j);
+
+                                if (temp.key.toLowerCase().equals(key.toLowerCase()) && temp.value.toLowerCase().equals(value.toLowerCase())) {
+                                    tagExists = true;
+                                }
+                            }
+
+
+                            if(!value.equals("") && !tagExists) {
                                 Tag tag = new Tag(key,value);
                                 album.getPhotos().get(pos).addTag(tag);
                                 stringList.add(tag.toString());
@@ -178,7 +188,7 @@ public class openphoto extends AppCompatActivity {
 
                 case R.id.navigation_movePhoto:
                     Builder builder = new AlertDialog.Builder(ctx);
-                    builder.setTitle("Single Choice");
+                    builder.setTitle("Select album to move photo to");
                     ArrayList<String> albumNames = new ArrayList<String>();
                     for(int i = 0; i < Instagram.getApp().getAllAlbums().size(); i++){
                         albumNames.add(Instagram.getApp().getAllAlbums().get(i).name);

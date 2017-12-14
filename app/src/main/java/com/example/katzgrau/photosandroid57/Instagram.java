@@ -14,6 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+import android.content.Context;
 
 //import application.models.*;
 
@@ -62,8 +63,8 @@ public class Instagram implements Serializable {
 	/**
 	 * sets the instance of the class by deserializing
 	 **/
-	public static void create() throws ClassNotFoundException, IOException {
-		instagram = readApp();
+	public static void create(Context context) throws ClassNotFoundException, IOException {
+		instagram = readApp(context);
 	}
 	
 	/**
@@ -91,23 +92,28 @@ public class Instagram implements Serializable {
 	 * @param iapp
 	 * the instance that will be serialized for data persistance
 	 **/
-	public static void writeApp(Instagram iapp) throws IOException {
-		 ObjectOutputStream oos = new ObjectOutputStream(
-		 new FileOutputStream(storeFile));
-		 oos.writeObject(iapp);
+	public static void writeApp(Context context, Instagram iapp) throws IOException {
+		FileOutputStream fos = context.openFileOutput(storeFile, Context.MODE_PRIVATE);
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(iapp);
+		oos.close();
+		fos.close();
 	}
 	
 	/**
 	 * @return deserialized instance of the class
 	 **/
-	public static Instagram readApp()
+	public static Instagram readApp(Context context)
 			throws IOException, ClassNotFoundException {
 		try {
-			ObjectInputStream ois = new ObjectInputStream(
-			new FileInputStream(storeFile));
+			FileInputStream fis = context.openFileInput(storeFile);
+			System.out.println("FAILS AT INSTAGRAM CAST");
+			ObjectInputStream ois = new ObjectInputStream(fis);
 			Instagram iapp = (Instagram)ois.readObject();
+			System.out.println("IS READING");
 			return iapp;
 		} catch (Exception e) {
+			System.out.println("CAN NOT READ");
 			return null;
 		}
 	} 
